@@ -8,6 +8,7 @@ const query = graphql`
   query MyQuery {
   allStrapiSoin(sort:{fields: title, order: ASC}) {
     nodes {
+      id
       contenu
       title
       image {

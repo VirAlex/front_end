@@ -68,3 +68,8 @@
 .text {
   padding-top: 9px;
 }
+
+.detail{
+  display: flex;
+  justify-content: center;
+}
