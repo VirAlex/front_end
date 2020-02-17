@@ -13,7 +13,7 @@ const query = graphql`
       title
       image {
         childImageSharp {
-          fluid(maxWidth:600){
+          fluid(maxWidth:369,maxHeight: 250){
             ...GatsbyImageSharpFluid_withWebp
           }
         }
