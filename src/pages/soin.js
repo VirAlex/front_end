@@ -40,7 +40,7 @@ const Soin = ({data}) => {
 export default Soin
 
 export const query = graphql`
-  query Soin ($id: String!){
+  query Soin ($id: String){
     strapiSoin(id: {eq: $id}){
       title
       contenu,
