@@ -37,6 +37,7 @@
   }
   .header img {
     max-width: 5rem;
+    max-height: 3.3rem;
     border-radius: 8px;
   }
 }
