@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 // import { useStaticQuery } from "gatsby"
 import Image from 'gatsby-image'
 import styles from "../css/single-soin.module.css"
+import { Link } from "gatsby"
+import style from "../css/navbar.module.css"
 
 
 
@@ -27,6 +29,9 @@ const Soin = ({data}) => {
       <div className={styles.detail}>
 
         <Image fixed={mainImage} alt={data.strapiSoin.title} className={styles.img} />
+      </div>
+      <div className={styles.detail}>
+      <Link to="/" className={style.navLink} style={{marginTop: "20px", marginBottom: "20px"}}>Back</Link>
       </div>
     </Layout>
   )
