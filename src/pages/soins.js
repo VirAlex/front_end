@@ -11,7 +11,7 @@ const soins = () => {
           marginTop: "4rem",
         }}
       >
-        la page des soins
+
       </h1>
       <Soins />
     </Layout>
