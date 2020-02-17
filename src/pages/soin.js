@@ -23,6 +23,9 @@ const Soin = ({data}) => {
 
         <Image fixed={mainImage} alt={data.strapiSoin.title} className={styles.img} />
       </div>
+      <div className={styles.contenu}>
+      <p>{data.strapiSoin.contenu}</p>
+      </div>
       <div className={styles.detail}>
       <Link to="/soins" className={style.navLink} style={{marginTop: "20px", marginBottom: "20px"}}>Back</Link>
       </div>

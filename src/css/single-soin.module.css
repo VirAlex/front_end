@@ -73,3 +73,13 @@
   display: flex;
   justify-content: center;
 }
+
+.contenu{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
