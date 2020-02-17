@@ -5,6 +5,7 @@ import Image from 'gatsby-image'
 import styles from "../css/single-soin.module.css"
 import { Link } from "gatsby"
 import style from "../css/navbar.module.css"
+import Title from "../components/Title"
 
 
 
@@ -16,15 +17,7 @@ const Soin = ({data}) => {
     // let soin = data.allStrapiSoin.nodes
   return (
     <Layout>
-      <h1
-        style={{
-          textAlign: "center",
-          textTransform: "capitalize",
-          marginTop: "4rem",
-        }}
-      >
-        la page du {data.strapiSoin.title}
-      </h1>
+      <Title title={data.strapiSoin.title} subtitle={data.strapiSoin.prix + "€"} />
 
       <div className={styles.detail}>
 
