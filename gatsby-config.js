@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.DEPLOY_URL
-          ? "https://polar-peak-29972.herokuapp.com"
+          ? "https://apibeauty.herokuapp.com"
           : "http://localhost:1337",
         queryLimit: 1000, // Default to 100
         contentTypes: [`soin`, `about`, `contact`],
