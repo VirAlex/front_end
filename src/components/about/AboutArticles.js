@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './Article'
+import Map from "../../components/about/Map"
 import { graphql, useStaticQuery } from "gatsby"
 
 
@@ -8,16 +8,18 @@ const query = graphql`
   query AboutQuery {
     allStrapiAbout {
       nodes {
+        CodepostalVille
+        HoraireDimanche
+        HoraireJeudi
+        HoraireLundi
+        HoraireMardi
+        HoraireMercredi
+        HoraireSamedi
+        HoraireVendredi
+        NumeroRue
         id
-        content
         title
-        photo {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
+        content
       }
     }
   }
@@ -25,13 +27,12 @@ const query = graphql`
 
 export default function AboutArticles(){
   const data = useStaticQuery(query)
-  console.log(data.allStrapiAbout.nodes)
   let articles = data.allStrapiAbout.nodes
   return(
     <div>
     {
       articles.map(article =>{
-        return <Article key={article.id} {...article} />
+        return <Map key={article.id} {...article} />
       })
     }
 
