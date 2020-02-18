@@ -42,16 +42,18 @@ export default function Contact() {
               c.photo.childImageSharp.fixed
             return (
               <div key={c.id} className={styles.flex}>
+              <div className={styles.text}>
+                  <p>{c.content}</p>
+              </div>
                 <article className={styles.text}>
-                  <p>
-                    {c.content}
+                  <div className={styles.flex}>
                     <a href={"mailto:" + c.mail}>Nous écrire</a>
-                  </p>
-                  <p>C'est nous</p>
+                </div>
                   <Image
                     fixed={mainImage}
                     alt={c.title}
                     className={styles.img}
+                    style={{borderRadius:"50%"}}
                   />
                 </article>
               </div>

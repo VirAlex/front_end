@@ -20,6 +20,7 @@
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   transition: var(--mainTransition);
+  font-size: 2rem;
 }
 .text a:hover {
   color: var(--darkGrey);
