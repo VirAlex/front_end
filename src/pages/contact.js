@@ -15,6 +15,7 @@ const query = graphql`
         name
         last_name
         mail
+        Telephone
         photo {
           childImageSharp {
             fixed(width: 100, height: 100) {
@@ -43,6 +44,7 @@ export default function Contact() {
             return (
               <div key={c.id} className={styles.flex}>
               <div className={styles.text}>
+              <h1>{c.name}</h1>
                   <p>{c.content}</p>
               </div>
                 <article className={styles.text}>
@@ -55,6 +57,8 @@ export default function Contact() {
                     className={styles.img}
                     style={{borderRadius:"50%"}}
                   />
+                  <p>{c.first_name}{" "}{c.last_name}</p>
+                  <p>{c.Telephone}</p>
                 </article>
               </div>
             )

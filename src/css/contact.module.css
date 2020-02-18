@@ -11,6 +11,9 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+.text h1 {
+  font-size: 4rem;
+}
 .text p {
   font-size: 1.6rem;
   letter-spacing: 1px;
