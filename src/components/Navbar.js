@@ -55,7 +55,9 @@ const Navbar = () => {
         }
       >
         <div className={styles.header}>
-          <img src={logo} alt="john smilga logo"></img>
+          <Link to="/">
+            <img src={logo} alt="echapee belle logo"></img>
+          </Link>
           <button
             type="button"
             className={styles.toggleBtn}
