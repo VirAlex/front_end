@@ -13,7 +13,6 @@ class Map extends Component {
   }
   render() {
     const detail = this.props;
-    console.log(detail);
 
 
 
