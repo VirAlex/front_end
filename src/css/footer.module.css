@@ -30,3 +30,8 @@
 .link:hover {
   color: var(--darkGrey);
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
