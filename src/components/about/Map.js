@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from "google-map-react"
 import Marker from "./Marker"
+import '../../css/about.module.css'
 
 class Map extends Component {
   static defaultProps = {
@@ -18,7 +19,7 @@ class Map extends Component {
     return (
       // Important! Always set the container height explicitly
       <div style={{ display: "flex", justifyContent: "arround" }}>
-        <div style={{ height: "80vh", width: "100%" }}>
+        <div style={{ height: "100vh", width: "100%" }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: key }}
             defaultCenter={this.props.center}
@@ -30,13 +31,13 @@ class Map extends Component {
         <div
           style={{
             backgroundColor: "white",
-            height: "80vh",
-            width: "90%",
+            height: "100vh",
+            width: "70%",
             display: "flex",
             justifyContent: "center",
           }}
         >
-          <div>
+          <div className="horaires">
             <h2>Echapée Belle</h2>
             <p>{detail.NumeroRue}</p>
             <p>{detail.CodepostalVille}</p>
