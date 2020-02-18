@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from "google-map-react"
 import Marker from "./Marker"
-const AnyReactComponent = ({ text }) => <div style={{fontSize:"30px"}}>{text}</div>
 
 class Map extends Component {
   static defaultProps = {
@@ -13,9 +12,6 @@ class Map extends Component {
   }
   render() {
     const detail = this.props;
-
-
-
     const key = process.env.GATSBY_GOOGLE_API_KEY
     console.log(key);
 
