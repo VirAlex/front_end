@@ -12,10 +12,9 @@ const Footer = () => {
         <img src={logo} alt="Echapée Belle Logo" style={{width:90, borderRadius:"8px"}}></img>
         <div className={styles.flex}>
           <p>Echapée Belle</p>
-          <FaAddressCard style={{ marginLeft: "1em" }}/>
-          <p style={{ marginLeft: "0.2em" }}>725 Route Nationale 6 73190 Saint-Jeoire-Prieuré</p>
-          <FaPhoneSquare style={{marginLeft:"1em"}}/>
-          <p style={{ marginLeft: "0.2em" }}>0620258896</p>
+
+          <p style={{ marginLeft: "0.2em" }}><FaAddressCard style={{ marginRight: "1em" }} />725 Route Nationale 6 73190 Saint-Jeoire-Prieuré</p>
+          <p style={{ marginLeft: "0.2em" }}><FaPhoneSquare style={{ marginRight: "1em" }} />0620258896</p>
         </div>
       </div>
       <div className={styles.icons}>
