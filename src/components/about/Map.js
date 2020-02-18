@@ -17,6 +17,8 @@ class Map extends Component {
 
 
     const key = process.env.GATSBY_GOOGLE_API_KEY
+    console.log(key);
+
     return (
       // Important! Always set the container height explicitly
       <div style={{ display: "flex", justifyContent: "arround" }}>
