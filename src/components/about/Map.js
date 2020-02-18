@@ -13,7 +13,6 @@ class Map extends Component {
   render() {
     const detail = this.props;
     const key = process.env.GATSBY_GOOGLE_API_KEY
-    console.log(key);
 
 
     return (
