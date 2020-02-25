@@ -6,6 +6,12 @@
 .flex{
   text-align: center;
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .text {
   width: 90vw;
   max-width: 1170px;
@@ -21,7 +27,7 @@
 }
 .text a {
   letter-spacing: var(--mainSpacing);
-  color: var(--mainPurple);
+  color: var(--mainSubtitle);
   transition: var(--mainTransition);
   font-size: 2rem;
 }
@@ -39,4 +45,9 @@
 }
 .img-container:hover .img {
   opacity: 0.3;
+}
+
+.icon{
+  color: var(--mainSubtitle);
+  font-size: 25px;
 }

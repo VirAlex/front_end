@@ -69,8 +69,8 @@ class Form extends Component {
           </div>
             <textarea id="message" name="message" onChange={this.handleChange} />
         <p>
-          <input id="submit" type="submit" value="GO!" />
-          <input id="submit" type="reset" value="Eraser" />
+          <input id="submit" type="submit" value="Envoyer!" />
+          <input id="submit" type="reset" value="Effacer" />
         </p>
       </form>
       </>

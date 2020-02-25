@@ -5,6 +5,13 @@ import Form from "../components/Form"
 import styles from "../css/contact.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import {
+  IoMdMail
+} from "react-icons/io"
+
+import {
+  FaPhoneSquare
+} from "react-icons/fa"
 
 const query = graphql`
   query ContactQuery {
@@ -48,9 +55,7 @@ export default function Contact() {
               </div>
                 <Form/>
                 <article className={styles.text}>
-                  <div className={styles.flex}>
-                    <a href={"mailto:" + c.mail}>Email</a>
-                </div>
+
                   <Image
                     fixed={mainImage}
                     alt={c.title}
@@ -58,7 +63,11 @@ export default function Contact() {
                     style={{borderRadius:"50%"}}
                   />
                   <p>{c.first_name}{" "}{c.last_name}</p>
-                  <p>{c.Telephone}</p>
+                  <div class={styles.center}>
+                    <FaPhoneSquare className={styles.icon} style={{marginBottom:"20px", marginRight:"10px"}}/><p>{c.Telephone}</p>
+                  </div>
+                  <a href={"mailto:" + c.mail}><IoMdMail/></a>
+
                 </article>
               </div>
             )
