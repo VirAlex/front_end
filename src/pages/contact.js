@@ -37,7 +37,6 @@ export default function Contact() {
   return (
     <Layout>
       <section className={styles.contact}>
-        <Title title="contact"></Title>
         {
           contact.map(c=>{
             const mainImage =
@@ -45,13 +44,12 @@ export default function Contact() {
             return (
               <div key={c.id} className={styles.flex}>
               <div className={styles.text}>
-              <h1>{c.name}</h1>
-                  <p>{c.content}</p>
+                  <h2>{c.name}</h2>
               </div>
                 <Form/>
                 <article className={styles.text}>
                   <div className={styles.flex}>
-                    <a href={"mailto:" + c.mail}>Nous écrire</a>
+                    <a href={"mailto:" + c.mail}>Email</a>
                 </div>
                   <Image
                     fixed={mainImage}
