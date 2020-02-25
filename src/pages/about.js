@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styles from "../css/about.module.css"
 import Title from "../components/Title"
+import AboutArticles from "../components/about/AboutArticles"
 
 
 const about = () => {
