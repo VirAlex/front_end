@@ -46,6 +46,13 @@ export default function Contact() {
               <div className={styles.text}>
               <h1>{c.name}</h1>
                   <p>{c.content}</p>
+                  <form method="post"
+                        name="contact"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field">
+                    <input name="name" placeholder="Your Name" type="text"/>
+                    <button>Send</button>
+                  </form>
               </div>
                 <article className={styles.text}>
                   <div className={styles.flex}>
