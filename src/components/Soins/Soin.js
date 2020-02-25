@@ -30,7 +30,7 @@ export default function Soin({title, contenu, image, prix, id}) {
           <h3>{title}</h3>
           <p>{prix} €</p>
         </div>
-        <img src={logo} alt="" style={{ width: 60, borderRadius: "8px" }} />
+        <img src={logo} alt={title} style={{ width: 60, borderRadius: "8px" }} />
       </div>
     </article>
   )
