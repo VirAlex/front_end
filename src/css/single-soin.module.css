@@ -83,3 +83,26 @@
   margin-right: 80px;
 }
 
+.containerSoin{
+  height: 80vh;
+}
+
+.link2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainSubtitle);
+  border: 2px solid var(--mainBlack);
+  padding: 0.5rem 0.7rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.link2:hover {
+  background: var(--mainBlack);
+  color: var(--primaryColor);
+}
