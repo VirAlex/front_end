@@ -17,7 +17,7 @@ const Footer = () => {
           <p style={{ marginLeft: "0.2em" }}><FaPhoneSquare style={{ marginRight: "1em" }} />0620258896</p>
         </div>
       </div>
-      <div className={styles.icons}>
+      {/* <div className={styles.icons}>
         {icons.map(item => {
           return (
             <a key={item.id} target="_blank" href={item.url} className={styles.icon}>
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           )
         })}
-      </div>
+      </div> */}
       <div className={styles.info}>
         © {new Date().getFullYear()} <a href="https://portoflioalexandreviretti.herokuapp.com/" className={styles.link} target="_blank">
           Viretti Alexandre
