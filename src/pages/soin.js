@@ -25,7 +25,7 @@ const Soin = ({data}) => {
           <p>{data.strapiSoin.contenu}</p>
         </div>
         <div className={styles.detail}>
-          <Link to="/soins" className={styles.link2} style={{marginTop: "20px", marginBottom: "20px"}}>Back</Link>
+          <Link to="/soins" className={styles.link2}>Back</Link>
         </div>
       </div>
     </Layout>

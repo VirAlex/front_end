@@ -33,9 +33,9 @@
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
   padding: 0.5rem 0.7rem;
-  display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  display: inline-block;
 }
 .link:hover {
   background: var(--mainWhite);
@@ -70,8 +70,8 @@
 }
 
 .detail{
-  display: flex;
-  justify-content: center;
+align-items: center;
+text-align: center;
 }
 
 .contenu{
@@ -88,9 +88,6 @@
 }
 
 .link2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
   text-transform: uppercase;
@@ -98,9 +95,10 @@
   color: var(--mainSubtitle);
   border: 2px solid var(--mainBlack);
   padding: 0.5rem 0.7rem;
-  display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  text-align: center;
+  align-items: center;
 }
 .link2:hover {
   background: var(--mainBlack);
