@@ -4,7 +4,7 @@ import Soins from "../components/Soins/Soins"
 const soins = () => {
   return (
     <Layout>
-      <h1
+      <h2
         style={{
           textAlign: "center",
           textTransform: "capitalize",
@@ -12,7 +12,7 @@ const soins = () => {
         }}
       >
 
-      </h1>
+      </h2>
       <Soins />
     </Layout>
   )

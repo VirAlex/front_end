@@ -19,6 +19,7 @@
 }
 .info {
   margin: 0.5rem 0;
+  font-size: 12px;
 }
 .link {
   display: inline-block;
@@ -41,4 +42,11 @@
     font-size: 0.9rem;
     flex-wrap: wrap;
   }
+}
+
+.title {
+  font-size: 14.4px;
+}
+.title h2 {
+  font-size: 15px;
 }

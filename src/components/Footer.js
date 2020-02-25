@@ -11,11 +11,11 @@ const Footer = () => {
       <div className={styles.logo}>
         <img src={logo} alt="Echapée Belle Logo" style={{width:90, borderRadius:"8px"}}></img>
         <div className={styles.flex}>
-          <p>Echapée Belle</p>
-
+          <h1 className={styles.title}>Echappée Belle</h1>
           <p style={{ marginLeft: "0.2em" }}><FaAddressCard style={{ marginRight: "1em" }} />725 Route Nationale 6 73190 Saint-Jeoire-Prieuré</p>
           <p style={{ marginLeft: "0.2em" }}><FaPhoneSquare style={{ marginRight: "1em" }} />0620258896</p>
         </div>
+        <h2 className={styles.title}>Votre Référent sur la Région CHallésienne</h2>
       </div>
       {/* <div className={styles.icons}>
         {icons.map(item => {
