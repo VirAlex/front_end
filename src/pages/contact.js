@@ -30,7 +30,7 @@ const query = graphql`
 
 export default function Contact() {
   const data = useStaticQuery(query)
-  console.log(data);
+  // console.log(data);
 
   let contact = data.allStrapiContact.nodes
   return (
