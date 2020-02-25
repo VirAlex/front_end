@@ -27,7 +27,9 @@ const Footer = () => {
         })}
       </div>
       <div className={styles.info}>
-        © {new Date().getFullYear()} Viretti Alexandre. All rights reserved. Built
+        © {new Date().getFullYear()} <a href="https://portoflioalexandreviretti.herokuapp.com/" className={styles.link} target="_blank">
+          Viretti Alexandre
+        </a> All rights reserved. Built
         with
         <a href="https://www.gatsbyjs.org/" className={styles.link}>
           Gatsby
