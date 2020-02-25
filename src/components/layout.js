@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+import SEO from "./seo"
 
 const Layout = ({ children }) => {
   return (
