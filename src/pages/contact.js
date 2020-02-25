@@ -46,14 +46,11 @@ export default function Contact() {
               <div className={styles.text}>
               <h1>{c.name}</h1>
                   <p>{c.content}</p>
-                  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                  <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="bot-field" />
                     <p>
-                      <label>Email: <input type="text" name="name" /></label>
+                      <label>Your Name: <input type="text" name="name" /></label>
                     </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <div data-netlify-recaptcha="true"></div>
                     <p>
                       <button type="submit">Send</button>
                     </p>
