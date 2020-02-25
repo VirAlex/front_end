@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { navigate } from "gatsby"
+import "../css/form.module.css"
 
 class Form extends Component {
   constructor(props) {
@@ -42,6 +43,8 @@ class Form extends Component {
   }
   render() {
     return (
+      <>
+      <header>Nous Contacter</header>
       <form
         name="contact"
         method="post"
@@ -50,6 +53,8 @@ class Form extends Component {
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
         ref={this.ContactForm}
+        id="formStyle"
+        className="topBefore"
       >
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
@@ -58,32 +63,17 @@ class Form extends Component {
             <input name="bot-field" onChange={this.handleChange} />
           </label>
         </p>
+        <div className="flex">
+            <input id="name" type="text" name="name" onChange={this.handleChange} placeholder="NAME"/>
+            <input id="email" type="email" name="email" onChange={this.handleChange} placeholder="E-MAIL"/>
+          </div>
+            <textarea id="message" name="message" onChange={this.handleChange} />
         <p>
-          <label>
-            Your name:
-            <br />
-            <input type="text" name="name" onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your email:
-            <br />
-            <input type="email" name="email" onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:
-            <br />
-            <textarea name="message" onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-          <input type="reset" value="Eraser" />
+          <input id="submit" type="submit" value="GO!" />
+          <input id="submit" type="reset" value="Eraser" />
         </p>
       </form>
+      </>
     )
   }
 }

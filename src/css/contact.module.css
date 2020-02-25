@@ -21,7 +21,7 @@
 }
 .text a {
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: var(--mainPurple);
   transition: var(--mainTransition);
   font-size: 2rem;
 }
