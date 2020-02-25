@@ -64,7 +64,7 @@ class Form extends Component {
           </label>
         </p>
         <div className="flex">
-            <input id="name" type="text" name="name" onChange={this.handleChange} placeholder="NAME"/>
+            <input id="name" type="text" name="name" onChange={this.handleChange} placeholder="NOM"/>
             <input id="email" type="email" name="email" onChange={this.handleChange} placeholder="E-MAIL"/>
           </div>
             <textarea id="message" name="message" onChange={this.handleChange} />
