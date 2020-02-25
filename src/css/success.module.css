@@ -1,0 +1,36 @@
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  border: 2px solid var(--mainBlack);
+  padding: 0.5rem 0.7rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.link:hover {
+  background: var(--mainPurple);
+  color: var(--primaryColor);
+}
+.img-container:hover .link {
+  opacity: 1;
+}
+
+
+.container {
+  height: 100vh;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.container h2{
+  font-size: 40px;
+}
+
+.container h4 {
+  font-size: 30px;
+}

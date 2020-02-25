@@ -3,7 +3,6 @@ import styles from "../../css/single-soin.module.css"
 import Image from 'gatsby-image'
 import logo from "../../images/echap_logo.jpg"
 import { Link } from "gatsby"
-import SoinI from "../../pages/soin"
 
 
 
