@@ -7,6 +7,7 @@ import Footer from "./Footer"
 const Layout = ({ children }) => {
   return (
     <main>
+      <SEO />
       <Navbar></Navbar>
       <Sidebar></Sidebar>
       {children}
