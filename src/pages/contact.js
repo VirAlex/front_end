@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Title from "../components/Title"
+import Form from "../components/Form"
 import styles from "../css/contact.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
@@ -46,16 +47,8 @@ export default function Contact() {
               <div className={styles.text}>
               <h1>{c.name}</h1>
                   <p>{c.content}</p>
-                  <form method="post" netlify-honeypot="bot-field" data-netlify="true">
-                    <input type="hidden" name="bot-field" />
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
-                  </form>
               </div>
+                <Form/>
                 <article className={styles.text}>
                   <div className={styles.flex}>
                     <a href={"mailto:" + c.mail}>Nous écrire</a>
