@@ -120,20 +120,15 @@ input:hover {
 
 textarea {
   width: 470px;
-  width: 49%;
   height: 110px;
   max-height: 110px;
   padding: 15px;
-
   background: transparent;
   outline: none;
-
   color: #726659;
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-
   border: solid 1px #b3aca7;
-
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -175,3 +170,33 @@ textarea:hover {
 .message{
   width: 100%;
 }
+
+
+@media screen and (min-width: 100px) {
+  textarea {
+    width: 70.5vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  textarea {
+    width: 65.3%;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  textarea {
+    width: 55.9%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  textarea {
+    width: 49%;
+  }
+}
+
+
+
+
+
