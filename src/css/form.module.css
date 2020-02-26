@@ -174,25 +174,62 @@ textarea:hover {
 
 @media screen and (min-width: 100px) {
   textarea {
-    width: 70.5vh;
+    width: 100%;
+  }
+    input{
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  textarea {
+    width: 100%;
+  }
+  form{
+    margin-left: 15px;
+  }
+  input{
+    margin-right: 25px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   textarea {
-    width: 65.3%;
+    width: 90%;
+    margin-right: 25px;
+  }
+  form{
+    margin-left: 15px;
+  }
+  input{
+    margin-right: 25px;
+    width: 90%;
   }
 }
 
 @media screen and (min-width: 1680px) {
   textarea {
-    width: 55.9%;
+    width: 80%;
+    margin-right: 25px;
+  }
+  form{
+    margin-left: 15px;
+  }
+  input{
+    margin-right: 25px;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 1920px) {
   textarea {
-    width: 49%;
+    width: 80%;
+    margin-right: 25px;
+  }
+  input{
+    width: 80%;
   }
 }
 
