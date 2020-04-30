@@ -19,6 +19,7 @@
     "gatsby-transformer-sharp": "^2.2.19",
     "google-map-react": "^1.1.6",
     "husky": "^4.2.5",
+    "kind-of": "^6.0.3",
     "lint-staged": "^10.2.0",
     "minimist": "^1.2.3",
     "prop-types": "^15.7.2",
