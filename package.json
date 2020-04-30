@@ -18,6 +18,8 @@
     "gatsby-source-strapi": "0.0.9",
     "gatsby-transformer-sharp": "^2.2.19",
     "google-map-react": "^1.1.6",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -39,6 +41,19 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
