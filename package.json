@@ -15,7 +15,7 @@
     "gatsby-plugin-sharp": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
-    "gatsby-source-strapi": "0.0.9",
+    "gatsby-source-strapi": "3.0.4",
     "gatsby-transformer-sharp": "^2.2.19",
     "google-map-react": "^1.1.6",
     "husky": "^4.2.5",
